@@ -1,11 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ihor
- * Date: 13.09.17
- * Time: 11:48
- */
-use app\code\config\Database as Database;
-$conn = new Database();
-$conn->dbConnection();
-echo $conn;
+
+use app\code\foo;
+use app\code\bar;
+
+require './bootstrap.php';
+
+$foo = new foo();
+$bar = new bar();
