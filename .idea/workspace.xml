@@ -18,12 +18,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../oop.dev/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/../oop.dev/bootstrap/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../oop.dev/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/../oop.dev/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/bar.php" afterPath="$PROJECT_DIR$/app/code/bar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/controllers/MainController.php" afterPath="$PROJECT_DIR$/app/code/controllers/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/Autoload.php" afterPath="$PROJECT_DIR$/app/code/core/Autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/Router.php" afterPath="$PROJECT_DIR$/app/code/core/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/RouteList.php" afterPath="$PROJECT_DIR$/app/config/RouteList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../oop.dev/.htaccess" afterPath="$PROJECT_DIR$/../oop.dev/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../oop.dev/.idea/modules.xml" afterPath="$PROJECT_DIR$/../oop.dev/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../oop.dev/.idea/oop.dev.iml" afterPath="$PROJECT_DIR$/../oop.dev/.idea/oop.dev.iml" />
@@ -85,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Router.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/code/core/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="303">
+              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -105,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouteList.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RouteList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/RouteList.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -179,9 +174,9 @@
         <option value="$PROJECT_DIR$/app/code/core/autoload.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/code/core/Autoload.php" />
-        <option value="$PROJECT_DIR$/app/code/core/Router.php" />
         <option value="$PROJECT_DIR$/app/code/controllers/MainController.php" />
         <option value="$PROJECT_DIR$/app/config/RouteList.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Router.php" />
       </list>
     </option>
   </component>
@@ -302,12 +297,12 @@
       <workItem from="1505373653015" duration="11544000" />
       <workItem from="1505396727606" duration="87000" />
       <workItem from="1505396930169" duration="5727000" />
-      <workItem from="1505460392351" duration="18018000" />
+      <workItem from="1505460392351" duration="18847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59661000" />
+    <option name="totallyTimeSpent" value="60490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -538,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -554,10 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Router.php">
+    <entry file="file://$PROJECT_DIR$/app/config/RouteList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="72">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -570,10 +557,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/RouteList.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding />
         </state>
       </provider>

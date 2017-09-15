@@ -26,10 +26,9 @@ class Router
             $controller = new $controllerName();
         }
 
-        $action = 'index';
+        $action = 'indexAction';
         if(isset($routePart[2])  && trim($routePart[2]) != ''){
             $action = $routePart[2] . 'Action';
-            var_dump($action);
         }
 
         $findmethod = method_exists($controller,$action);
