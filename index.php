@@ -1,11 +1,7 @@
 <?php
 
-use app\code\foo;
-use app\code\bar;
-use app\code\core\top;
+require 'app/code/core/Autoload.php';
+$autoload = new Autoload();
 
-require './bootstrap.php';
-
-$foo = new foo();
-$bar = new bar();
-$top = new top();
+$router = new \app\code\core\Router();
+$router->start();

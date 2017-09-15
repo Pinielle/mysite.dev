@@ -5,7 +5,7 @@ namespace app\code;
 class bar {
 	
 	public function __construct() {
-		print 'app\code\bar';
+		print 'app\code\bar<br>';
 	}
 
 }

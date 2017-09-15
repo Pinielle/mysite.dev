@@ -5,3 +5,7 @@
  * Date: 15.09.17
  * Time: 16:06
  */
+
+return array(
+    'inventory' => 'Main'
+);
