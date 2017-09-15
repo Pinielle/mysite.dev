@@ -1,4 +1,5 @@
 <?php
+
 class Autoload
 {
     public function autoload()
@@ -10,18 +11,17 @@ class Autoload
             $base_directory = $_SERVER['DOCUMENT_ROOT'] . 'app/';
 
 
+            if (strncmp($prefix, $class, $length) !== 0) {
+                return;
+            }
 
-                if (strncmp($prefix, $class, $length) !== 0) {
-                    return;
-                }
+            $relative_class = substr($class, $length);
 
-                $relative_class = substr($class, $length);
+            $file = $base_directory . str_replace('\\', DIRECTORY_SEPARATOR, $relative_class) . '.php';
 
-                $file = $base_directory . str_replace('\\', '/', $relative_class) . '.php';
-
-                if (file_exists($file)) {
-                    require_once $file;
-                }
+            if (file_exists($file)) {
+                require_once $file;
+            }
         });
     }
 }

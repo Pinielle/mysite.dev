@@ -7,5 +7,5 @@
  */
 
 return array(
-    'inventory' => 'Main'
+    'index' => 'Inventory'
 );
