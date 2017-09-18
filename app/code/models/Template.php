@@ -8,16 +8,26 @@
 
 namespace app\code\models;
 
+/**
+ * Class Template
+ * @package app\code\models
+ */
 
 class Template
 {
     /**
      * @param $file string name for template
      */
-    public function renderTemplate($file)
+    public function renderTemplate($file, $params = array(), $return = false)
     {
         if ($file != null) {
-            require_once $_SERVER['DOCUMENT_ROOT']. 'app/code/views/templates/' . $file . '.phtml';
+            extract($params);
+            ob_start();
+            require_once $_SERVER['DOCUMENT_ROOT'] . 'app/code/views/templates/' . $file;
+            if ($return) return ob_get_clean();
+            else echo ob_get_clean();
+
         }
     }
 }
+

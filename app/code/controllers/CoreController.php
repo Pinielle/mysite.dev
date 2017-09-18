@@ -11,16 +11,37 @@ namespace app\code\controllers;
 
 use app\code\models\Template;
 
+/**
+ * Class CoreController
+ * @package app\code\controllers
+ */
 abstract class CoreController
 {
+    private $template;
+
+    /**
+     * CoreController constructor.
+     */
+    public function __construct()
+    {
+
+        $this->template = new Template();
+    }
+
+    /**
+     * default action
+     */
+
     public function indexAction()
     {
 
     }
 
-    public function __construct()
+    /**
+     * @return Template
+     */
+    public function getTemplate()
     {
-        $template = new Template();
-        return $template;
+        return $this->template;
     }
 }

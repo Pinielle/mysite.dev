@@ -7,17 +7,21 @@
  */
 
 namespace app\code\controllers;
+
 use app\code\models;
 
+/**
+ * Class InventoryController
+ * @package app\code\controllers
+ */
 class InventoryController extends CoreController
 {
-    /**
-     * default action
-     */
-
     public function indexAction()
     {
-        $template = new models\Template();
-        $template->renderTemplate('inventory');
+        $template = $this->getTemplate();
+        $template->renderTemplate('header.phtml', array('title' => 'Pages title', 'content' => array('1','2','3')));
+
+        $template->renderTemplate('inventory.phtml');
+        $template->renderTemplate('footer.phtml');
     }
 }
