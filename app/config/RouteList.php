@@ -7,5 +7,6 @@
  */
 
 return array(
-    'index' => 'Inventory'
+    'index' => 'User',
+    'inventory' => 'Inventory'
 );

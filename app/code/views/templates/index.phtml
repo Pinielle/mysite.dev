@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title><?php echo $title; ?></title>
+        <link rel="stylesheet" href="/app/code/views/css/style.css"/>
+    </head>
+    <body>
+        <table width="100%" border="black">
+            <!-- HEADER-->
+            <tr>
+                <td align="center"><?php echo $header; ?></td>
+            </tr>
+            <!-- Top Menu -->
+            <tr>
+                <td align="center"><?php if (isset($topmenu)){echo $topmenu;}; ?>
+                </td>
+            </tr>
+            <!-- Left menu-->
+            <tr>
+                <td>
+                    <table border="black" align="center" width="100%">
+                        <tr>
+                            <td align="left"><?php echo $leftbar; ?></td>
+                            <!-- Content Page-->
+                            <td align="left"><?php echo $content; ?></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- FOOTER-->
+            <tr>
+                <td align="center""><?php echo $footer; ?></td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+

@@ -9,7 +9,7 @@
 namespace app\code\core;
 
 use app\code\controllers\InventoryController;
-use app\code\controllers\MainController;
+use app\code\controllers\UserController;
 
 class Router
 {
@@ -23,7 +23,7 @@ class Router
         /**
          *  $controller its default controller
          */
-        $controller = new InventoryController();
+        $controller = new UserController();
         $routeList = require_once $_SERVER['DOCUMENT_ROOT'] . 'app/config/RouteList.php';
 
         if (isset($routePart[1]) && trim($routePart[1]) != '') {
@@ -41,7 +41,6 @@ class Router
         $action = 'indexAction';
         if (isset($routePart[2]) && trim($routePart[2]) != '') {
             $action = $routePart[2] . 'Action';
-            var_dump($action);
         }
 
         $findmethod = method_exists($controller, $action);

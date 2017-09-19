@@ -1,7 +1,13 @@
 <?php
 
+/**
+ * Class Autoload
+ */
 class Autoload
 {
+    /**
+     * Autoload constructor.
+     */
     public function autoload()
     {
         spl_autoload_register(function ($class) {

@@ -19,9 +19,6 @@ class InventoryController extends CoreController
     public function indexAction()
     {
         $template = $this->getTemplate();
-        $template->renderTemplate('header.phtml', array('title' => 'Pages title', 'content' => array('1','2','3')));
 
-        $template->renderTemplate('inventory.phtml');
-        $template->renderTemplate('footer.phtml');
     }
 }
