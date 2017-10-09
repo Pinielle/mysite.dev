@@ -37,8 +37,18 @@ class UserController extends CoreController
 
     public function loginAction()
     {
-        $db = new models\Db();
-        $db->connectDB();
+        $db = new models\Inventory();
+        var_dump($db);
+        $getRows = $db->getRows();
+        print_r($getRows);
+        //$getRow = $db->getRow(["User"]);
+        //$getRows = $db->getRows("SELECT * FROM users");
+        /*$insertRow = $db->insertRow("INSERT INTO users(name,lastname,email,password,acl) VALUE(?,?,?,?,?)",
+            ["qwer","ty","igorpiniella@gmailcom","321","1"]);*/
+        /*$updateRow = $db->updateRow("UPDATE users SET  name = ?, lastname = ?, email = ?, password = ?, acl = ? WHERE id = ?",
+            ["Vasgen","Abdulabanov","vasgenrullez@tadjik.kz","byashmyash","0","3"]);*/
+        //$deleteRow = $db->deleteRow("DELETE FROM users WHERE id = ?",["4"]);
+
         $template = $this->getTemplate();
         $template->generatePageHTML(
             $template->renderTemplate($this->template, array(), true),
